@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary: #bc4123;
+  --secondary: #2b3452;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins";
+  background: var(--secondary);
+}
+
+* {
+  color: #fff;
+  margin: 0;
+}
+
+p {
+  margin: 20px 0;
+}
+
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+/* navbar */
+header nav {
+  padding: 40px;
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav h1 {
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+header nav a.active {
+  background: var(--primary);
+}
+
+/* page content */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* help layout */
+.help-layout nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.help-layout nav a {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.help-layout nav a:hover {
+  border-color: var(--primary);
+}
+
+.help-layout nav a.active {
+  background: var(--primary);
+}
+
+/* About Page */
+.aboutSections {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.section {
+  padding-top: 1rem;
+}
+
+.cardSlider {
+  padding-top: 1rem;
+}
+
+.sliderContainer {
+  position: relative;
+  max-width: 35rem;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.sliderNav {
+  display: flex;
+  column-gap:  1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 5rem;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.sliderNav a {
+  width: 0.5rem; 
+  height: 0.5rem; 
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.sliderNav a:hover {
+  opacity: 1;
+}
+
+
+/* faq */
+.faq .question {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+/* contact form */
+form {
+  margin-top: 30px;
+}
+
+form input,
+form label span,
+form textarea {
+  display: block;
+}
+
+form input,
+form textarea {
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 0;
+  width: 300px;
+  color: var(--secondary);
+}
+
+form label span {
+  margin-bottom: 10px;
+}
+
+/* image */
+.home {
+  display: flex;
+  margin: 10px;
+}
+
+.info {
+  padding-left: 30px;
+}
+
+.item {
+  border-radius: 5%;
+  height: fit-content;
+  width: 500px;
+}
+
+/* careers details */
+
+
+/* breadcrumbs */
+
+/* firebase chat */
+
+/* App.css */
+

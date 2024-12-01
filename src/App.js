@@ -8,8 +8,8 @@ import {
 // pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Faq from "./pages/help/Faq";
-import Contact from "./pages/help/Contact";
+import Faq from "./pages/components/Faq";
+import Contact from "./pages/components/Contact";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";

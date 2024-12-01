@@ -10,6 +10,7 @@ body {
   padding: 20px;
   font-family: "Poppins";
   background: var(--secondary);
+  height: 100rem;
 }
 
 * {
@@ -55,6 +56,20 @@ header nav a.active {
   background: var(--primary);
 }
 
+/* footer */
+
+.spacer {
+  height: 50px;
+}
+
+.emailInput {
+  width: 500px;
+}
+
+#footerTitle {
+  margin-bottom: 10px;
+}
+
 /* page content */
 main {
   max-width: 1200px;
@@ -95,6 +110,8 @@ main {
   padding-top: 1rem;
 }
 
+
+/* imgslider */
 .cardSlider {
   padding-top: 1rem;
 }
@@ -197,6 +214,25 @@ form label span {
   width: 500px;
 }
 
+/* pokiapi */
+
+.apiEx {
+  margin-top: 2rem;
+}
+
+#apiBtn {
+  margin-left: 1rem;
+}
+
+.apiEx, input {
+  height: 1.5rem;
+  color: black;
+}
+
+#pokemonSprite {
+  padding-top: 1rem;
+  width: 8rem;
+}
 /* careers details */
 
 
@@ -205,4 +241,3 @@ form label span {
 /* firebase chat */
 
 /* App.css */
-

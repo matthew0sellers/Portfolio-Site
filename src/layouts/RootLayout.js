@@ -15,6 +15,7 @@ export default function RootLayout() {
       <main>
         <Outlet />
       </main>
+      
     </div>
   );
 }

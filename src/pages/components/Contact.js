@@ -13,6 +13,7 @@ export default function Contact() {
           </label>
           <button>Submit</button>
         </form>
+        
       </div>
     )
   }

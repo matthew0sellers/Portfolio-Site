@@ -1,21 +1,11 @@
-import React, { useEffect } from "react";
-import FirebaseApp from "./aboutJSComponents/FirebaseChat";
+import React, { useState } from "react";
+import PokiSearch from "./components/ApiPoki";
 
 export default function About() {
-  useEffect(() => {
-    document.querySelectorAll(".sliderNav a").forEach((nav) => {
-      nav.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = nav.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        targetElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      });
-    });
-  }, []);
-
+  
   return (
     <div className="about">
-      <div className="aboutWrap">
+      <div className="summary">
         <h2>About Us</h2>
         <p>
           I've spent a lot of time working with React, learning how to implement
@@ -34,9 +24,6 @@ export default function About() {
       </div>
 
       <div className="aboutSections">
-        {/* <div>
-          <p>          </p>
-        </div> */}
         <div className="video">
           <p>
             Here I embedded a music video from YouTube into my website, to give
@@ -92,18 +79,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="section">
-          <p>Auth0 authentication system</p>
-          {/* <Auth0/> */}
-        </div>
-        <div className="section">
-          <p>Here is a javascript game that I decided to make for fun</p>
-          {/* <Game/> */}
-        </div>
-        <div className="section">
-          <p>I implemented a way for you to get in touch with me, in a public forum using firebase. You could use this to get feedback from the public on your product or to build a community.</p>
-          <FirebaseApp/>
-        </div>
+        <PokiSearch></PokiSearch>
       </div>
     </div>
   );

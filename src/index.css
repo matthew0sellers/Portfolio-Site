@@ -214,11 +214,41 @@ form label span {
   width: 18rem;
 }
 
-.item-container {
-  width: 100%;
-  height: auto;
+@media (max-width: 800px){
+  .home {
+    display: flex;
+    margin: 5px;
+  }
+  
+  .info {
+    padding-left: 30px;
+    font-size: 0.7rem;
+  }
+  
+  .item {
+    width: 0;
+  }
+
+  header nav {
+    padding: 5px;
+  }
 }
 
+@media (max-width: 620px){
+  header nav {
+    font-size: .7rem;
+  }
+}
+
+@media (max-width: 480px){
+  header nav {
+    font-size: .5rem;
+  }
+  
+  .info {
+    font-size: 0.7rem;
+  }
+}
 /* pokiapi */
 
 .apiEx {

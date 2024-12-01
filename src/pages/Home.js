@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <div>
       <div className="home">
+        <div className="item-container">
         <img className="item" src={headshot} />
+        </div>
         <div className="info">
           <h2>Matthew Sellers</h2>
           <h3>Web Developer</h3>

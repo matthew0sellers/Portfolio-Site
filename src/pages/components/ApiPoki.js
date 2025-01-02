@@ -56,10 +56,12 @@ const PokiSearch = () => {
 
   return (
     <div className="apiEx">
+              <h4>API Application</h4>
+      
       <p>
         I know that the ability to use API's might be important to your project.
-        Here I'm using the pokemon API as an example. If you press the button you can hear what the pokemon sound like in the games.
-        This can be used to implement weather updates, financial data, or even authenticating your identity using login services.
+        API's can be used to implement weather updates, financial data, or even authenticating your identity using login services.
+        Here I'm using the free pokemon API as an example this is how API's can be used.
       </p>
       <input type="text" id="pokemonName" placeholder="Enter Pokemon name" />
       <button id="apiBtn" onClick={fetchData}>

@@ -242,11 +242,11 @@ form label span {
 
 @media (max-width: 480px){
   header nav {
-    font-size: .5rem;
+    font-size: .7rem;
   }
   
   .info {
-    font-size: 0.7rem;
+    font-size: 0.rem;
   }
 }
 /* pokiapi */
@@ -268,11 +268,38 @@ form label span {
   padding-top: 1rem;
   width: 8rem;
 }
-/* careers details */
 
+/* secondary Navlinks */
 
-/* breadcrumbs */
+/* navbar */
+.dropNav {
+  padding: 40px;
+  display: flex;
+  gap: 16px;
+  justify-content: start;
+  max-width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+}
 
-/* firebase chat */
+.dropNav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
 
-/* App.css */
+.dropNav a.active {
+  background: var(--primary);
+}
+
+/* about */
+
+.about{
+  justify-content: center;
+  margin: 50px;
+}
+
+.about p {
+  width: 55rem;
+}
+
